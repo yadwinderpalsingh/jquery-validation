@@ -1,0 +1,252 @@
+/*-------------------
+---- Main Styles ----
+---------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700);
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:800,300');
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    font-size: 16px;
+    color: #89949C;
+    letter-spacing: .01em;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+button:focus {
+    outline: none !important;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    font-size: 25px;
+    font-weight: 500;
+    color: #39444C;
+    text-align: center;
+}
+
+.light-typo * {
+    color: #fff;
+}
+
+/*---------------
+---- Buttons ----
+-----------------*/
+
+.btn-dc {
+    position: relative;
+    padding: 10px 50px;
+    font-size: 21px;
+    border: 2px solid;
+    -webkit-transition: padding .2s ease-out;
+    transition: padding .2s ease-out;
+}
+
+.btn-dc:after {
+    position: absolute;
+    margin-left: 10px;
+    font-family: fontAwesome;
+    opacity: 0;
+}
+
+.btn-submit{
+    float: right;
+}
+.btn-submit:after{
+    content: "\f061";
+}
+.btn-reset{
+    float: left;
+}
+.btn-reset:after{
+    content: "\f01e";
+}
+
+.btn-dc:hover {
+    padding-right: 70px;
+}
+
+.btn-dc:hover:after {
+    margin-left: 30px;
+    opacity: 1;
+}
+
+.btn-dc
+.btn-dc:hover,
+.btn-dc:focus {
+    color: #00CCCB;
+}
+
+/*-----------------------
+---- Logo Styles  ----
+-------------------------*/
+
+header{
+    position: absolute;
+    width: 100%;
+    padding: 15px 0;
+    color: #00CCCB;
+    font-size: 48px;
+    font-family: 'Merriweather Sans';
+    font-weight: 800;
+    text-align: center;
+    z-index: 1000;
+}
+
+header span{
+    position: absolute;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 300;
+    top: 80px;
+    margin-left: -60px;
+}
+
+
+/*-----------------------
+---- Contact Styles  ----
+-------------------------*/
+
+#contact {
+    position: relative;
+    height: 100%;
+    padding: 140px 0 0;
+    background: url(../images/site_bg.jpg) center;
+    background-attachment: fixed;
+}
+
+#contact.color-overlay:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    opacity: .4;
+}
+
+#contact-form .form-group {
+    position: relative;
+}
+
+#contact-form .form-group label {
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #fff;
+    z-index: 1;
+    -webkit-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+#contact-form .form-control:focus + label {
+    top: -20px;
+    color: #fff;
+}
+
+#contact-form .form-control.input-filled + label {
+    top: -20px;
+}
+
+#contact-form .form-control {
+    padding: 10px 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    height: auto;
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid;
+    box-shadow: none !important;
+    -webkit-transition: border .25s ease-out;
+    transition: border .25s ease-out;
+}
+
+#contact-form .form-control:focus {
+    border-bottom: 2px solid #00CCCB;
+}
+
+#contact-form .form-control::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #fff;
+    opacity: .5;
+}
+
+#contact-form .form-control:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #fff;
+    opacity: .5;
+}
+
+#contact-form .form-control::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #fff;
+    opacity: .5;
+}
+
+#contact-form .form-control:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #fff;
+    opacity: .5;
+}
+
+#contact-form .form-control:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+#contact-form .form-control:focus:-moz-placeholder {
+    opacity: 1;
+}
+
+#contact-form .form-control:focus::-moz-placeholder {
+    opacity: 1;
+}
+
+#contact-form .form-control:focus:-ms-placeholder {
+    opacity: 1;
+}
+
+#contact-form .btn,
+#contact-form .btn:focus {
+    margin: 0 auto;
+    display: block;
+    background: none !important;
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+#contact-form .btn:hover,
+#contact-form .btn:active {
+    color: #00CCCB;
+}
+
+#contact-form .form-group .error-message {
+    margin-left: 8px;
+    color: #00CCCB;
+}
+
+#contact-form {
+    position: relative;
+}
+
+#contact-form .contact-form-message {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+#contact-form .contact-form-message .fa {
+    margin-right: 5px;
+}

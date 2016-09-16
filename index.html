@@ -1,0 +1,104 @@
+<!--
+Assignment - Yadwinderpal Singh
+index
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="Description" content="">
+    <meta name="keywords" content="">
+
+    <title>Creative Agency</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        fling
+        <span>the best collection of music</span>
+    </header>
+
+    <!--------------------------------------------
+    ------------------- SignUp -------------------
+    --------------------------------------------->
+
+    <section id="contact" class="big-padding light-typo color-overlay">
+        <div class="container">
+
+            <div class="row">
+
+                <form id="contact-form" class="col-sm-6 col-sm-offset-3">
+                    <h1 class="section-title">You gonna love it!</h1>
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="contact-name" name="contactName" class="form-control requiredField" type="text" data-error-empty="is required" autofocus>
+                            <label class="control-label" for="contact-name">Name</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="contact-mail" name="email" class="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid">
+                            <label class="control-label" for="contact-mail">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="contact-password" name="password" class="form-control requiredField" type="password" data-error-empty="is required" data-error-invalid="is invalid">
+                            <label class="control-label" for="password">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="confirm-password" name="confirmPassword" class="form-control requiredField" type="password" data-error-empty="is required" data-error-invalid="doesn't match with password">
+                            <label class="control-label" for="confirm-password">Confirm Password</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="phone" name="phone" class="form-control requiredField" type="tel" data-error-invalid="is invalid - format: xxx-xxx-xxxx">
+                            <label class="control-label" for="phone">Phone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="controls">
+                            <input id="web-address" name="webAddress" class="form-control requiredField" type="text" data-error-invalid="is invalid - format: http://x.y.z">
+                            <label class="control-label" for="web-address">Web Address</label>
+                        </div>
+                    </div>
+
+                    <button name="submit" type="submit" class="btn btn-dc btn-submit" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Send It</button>
+                    <button name="submit" type="reset" class="btn btn-dc btn-reset" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Reset</button>
+                    <input type="hidden" name="submitted" id="submitted" value="true" />
+
+                </form>
+                <!-- End contact-form -->
+
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------
+    ------------------- Scripts -------------------
+    --------------------------------------------->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
